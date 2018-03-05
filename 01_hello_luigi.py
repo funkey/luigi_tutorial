@@ -15,7 +15,7 @@ class HelloTask(luigi.Task):
         with open("hello.txt", "w") as f:
             f.write("Hello Mario!")
 
-    def outputs(self):
+    def output(self):
         return FileTarget("hello.txt")
 
 if __name__ == "__main__":
